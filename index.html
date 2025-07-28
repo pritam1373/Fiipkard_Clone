@@ -11,8 +11,8 @@
             margin: auto;
             border: 0.2px solid black;
             display: flex;
-           
-
+           border-radius: 1.5vw;
+          background-color: rgb(145, 226, 226);
         }
         #flipkard{
             
@@ -29,6 +29,8 @@
        margin-left: 2vw;
        margin-top: 1.5vh;
        font-size: 3vh;
+       border-radius: 1vw;
+       border: 0.1px solid black;
 
         }
         #searchicon{
@@ -107,32 +109,34 @@
 
         #second{
             width: 80vw;
-            height: 12vh;
+            height: 13vh;
             margin: auto;
-            margin-top: 1.4vh;
+            margin-top: 1vh;
             border: 0.2px solid black;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            border-radius: 1.4vw;
+          background-color: antiquewhite;
         }
         #minutes{
             width: 3vw;
             margin-left: 3vw;
-            margin-top: -2vh;
+            margin-top: -1vh;
         
         }
 
           #mobile{
             width: 3vw;
             margin-left: 4vw;
-            margin-top: -2vh;
+            margin-top: -1vh;
         
         }
         #fasion{
             width: 4vw;
             margin-left: 3vw;
-            margin-top: -2vh;
+            margin-top: -1vh;
         
         }
         #electronics{
@@ -183,7 +187,101 @@
             margin: auto;
             margin-top: -1vh;
             height: 3vh;
+            /* border: 1px solid black; */
+            display: flex;
+
+        }
+        .box{
+            width: 6vw;
+            height: 2vh;
+            /* border: 0.5px solid black; */
+            margin-left: 3vw;
+            font-weight: 700;
+            font-size: 2.4vh;
+        }
+        #box1{
+            margin-left: 4vw;
+        }
+     #box2{
+        position: relative;
+        left: 0vw;
+     }
+     #box3{
+        position: relative;
+        left: -1vw;
+     }
+        #box4{
+            position: relative;
+            left: -2vw;
+        }
+        #box5{
+            position: relative;
+            left: -1vw;
+        }
+        #box6{
+            position: relative;
+            left: 1vw;
+        }
+        #box7{
+            position: relative;
+            left: -1vw;
+            width: 10vw;
+        }
+        #box8{
+            position: relative;
+            left: -1.2vw;
+        }
+        #box9{
+            position: relative;
+            left: -1.5vw;
+        }
+
+
+         #middle1{
+            width: 80vw;
+            height: 25vh;
+            margin: auto;
+            margin-top: 2vh;
             border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+           overflow: hidden;
+         
+        }
+
+        #sbox{
+            width: 320vw;
+            height: 25vh;
+            border: 1px solid black;
+            display: flex;
+           
+            /* transform: translateX(-240vw); */
+            animation-name: move;
+            animation-timing-function: ease-in-out;
+            animation-duration: 12s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        .ps{
+            width: 80vw;
+            height: 25vh;
+            margin: auto;
+        }
+        @keyframes move {
+            0%{
+                transform: translateX(0vw); 
+            }
+            25%{
+
+                transform: translateX(-75vw); 
+            }
+            50%{
+                transform: translateX(-160vw); 
+            }
+            75%{
+                transform: translateX(-240vw); 
+            }
         }
 
     </style>
@@ -245,10 +343,33 @@
     <img src="sofed.png" alt="" id="sofed" class="logo">
 
 
-    <div id="lekha"></div>
+    <div id="lekha">
+
+    <div id="box1" class="box">Minutes</div>
+    <div id="box2" class="box">Mobile</div>
+    <div id="box3" class="box">Fashion</div>
+    <div id="box4" class="box">Electronics</div>
+    <div id="box5" class="box">Funniture</div>
+    <div id="box6" class="box">TV</div>
+    <div id="box7" class="box">Flight Bookings</div>
+    <div id="box8" class="box">Beauty</div>
+    <div id="box9" class="box">Grocery</div>
+
+
+    </div>
 
 </div>
 
+<div id="middle1">
+    <div id="sbox">
+
+<img src="bsd(s).webp" alt="" id="ps1" class="ps">
+<img src="Bad 2(s).webp" alt="" id="ps2" class="ps">
+<img src="Sumsung (s).webp" alt="" id="ps3" class="ps">
+<img src="plane (s).webp" alt="" id="ps4" class="ps">
+
+    </div>
+</div>
     
    
 </body>
