@@ -6,10 +6,10 @@ s1=document.getElementById("searchicon")
 
 
 a.addEventListener("click",()=>{
-    b.style.transform="translateY(80vh)"
+    b.style.transform="translateY(83vh)"
 })
 r.addEventListener("click",()=>{
-    b.style.transform="translateY(-215vh)"
+    b.style.transform="translateY(-230vh)"
 })
 
 s.addEventListener("mouseleave",()=>{
