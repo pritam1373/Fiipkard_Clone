@@ -143,3 +143,10 @@ t.addEventListener("click",()=>{
      o.style.transform="translateY(68vh)"
 })
 
+
+
+r2=document.getElementById("remove2")
+
+r2.addEventListener("click",()=>{
+    o.style.transform="translateY(-68vh)"
+})
