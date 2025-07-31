@@ -150,3 +150,58 @@ r2=document.getElementById("remove2")
 r2.addEventListener("click",()=>{
     o.style.transform="translateY(-68vh)"
 })
+
+
+
+
+b1=document.getElementById("option1")
+b2=document.getElementById("option2")
+b3=document.getElementById("option3")
+b4=document.getElementById("option4")
+
+b1.addEventListener("click",()=>{
+    b1.style.backgroundColor="blue"
+    b1.style.color="white"
+    b2.style.backgroundColor="white"
+    b2.style.color="blue"
+    b3.style.backgroundColor="white"
+    b3.style.color="blue"
+    b4.style.backgroundColor="white"
+    b4.style.color="blue"
+  
+})  
+b2.addEventListener("click",()=>{
+    b2.style.backgroundColor="blue"
+    b2.style.color="white"
+    b1.style.backgroundColor="white"
+    b1.style.color="blue"
+    b3.style.backgroundColor="white"
+    b3.style.color="blue"
+    b4.style.backgroundColor="white"
+    b4.style.color="blue"
+   
+})  
+
+b3.addEventListener("click",()=>{
+    b3.style.backgroundColor="blue"
+    b3.style.color="white"
+    b2.style.backgroundColor="white"
+    b2.style.color="blue"
+    b1.style.backgroundColor="white"
+    b1.style.color="blue"
+    b4.style.backgroundColor="white"
+    b4.style.color="blue"
+   
+})  
+
+b4.addEventListener("click",()=>{
+    b4.style.backgroundColor="blue"
+    b4.style.color="white"
+    b2.style.backgroundColor="white"
+    b2.style.color="blue"
+    b3.style.backgroundColor="white"
+    b3.style.color="blue"
+    b1.style.backgroundColor="white"
+    b1.style.color="blue"
+    
+})
