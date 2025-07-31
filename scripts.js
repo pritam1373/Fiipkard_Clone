@@ -12,8 +12,9 @@ r.addEventListener("click",()=>{
     b.style.transform="translateY(-230vh)"
 })
 
-s.addEventListener("mouseleave",()=>{
+s.addEventListener("click",()=>{
     s1.style.opacity="0"
+    s.style.textAlign="center"
 })
 
 
@@ -128,3 +129,17 @@ a6.addEventListener("click",()=>{
     a1.style.backgroundColor="white"
     a1.style.color="blue"
 })  
+
+
+
+
+t=document.getElementById("threedot")
+o=document.getElementById("option")
+
+
+
+t.addEventListener("click",()=>{
+
+     o.style.transform="translateY(68vh)"
+})
+
