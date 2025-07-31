@@ -31,6 +31,7 @@
        font-size: 3vh;
        border-radius: 1vw;
        border: 0.1px solid black;
+       /* text-align: center; */
 
         }
         #searchicon{
@@ -189,14 +190,14 @@
             margin: auto;
             margin-top: -1vh;
             height: 3vh;
-            /* border: 1px solid black; */
+           
             display: flex;
 
-        }
+    }
         .box{
             width: 6vw;
             height: 2vh;
-            /* border: 0.5px solid black; */
+           
             margin-left: 3vw;
             font-weight: 700;
             font-size: 2.4vh;
@@ -258,7 +259,7 @@
             border: 1px solid black;
             display: flex;
            
-            /* transform: translateX(-240vw); */
+          //  transform: translateX(-240vw);
             animation-name: move;
             animation-timing-function: ease-in-out;
             animation-duration: 30s;
@@ -334,7 +335,7 @@
         text-align: center;
         color: blueviolet;
         height: 4vh;
-        /* border: 1px solid black; */
+        //border: 1px solid black;
           position: relative;
           top: -52vh;
           left: 35vw;
@@ -379,10 +380,10 @@
     height: 8vh;
     margin: auto;
     margin-top: -3vh;
-    /* border: 1px solid black; */
+   // border: 1px solid black;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+   // justify-content: center;
+   // align-items: center;
     font-size: 2.5vh;
     font-weight: 600;
     color: blueviolet;
@@ -398,7 +399,7 @@
 #line1{
     width: 10vw;
     height: 6vh;
-    /* border: 1px solid black; */
+   
     margin-left: 1vw;
     margin-top: 1vh;
 }
@@ -406,14 +407,14 @@
 #line2{
     width: 9vw;
     height: 6vh;
-    /* border: 1px solid black; */
+   
     margin-left: 2.3vw;
     margin-top: 1vh;
 }
 #line3{
     width: 9vw;
     height: 6vh;
-    /* border: 1px solid black; */
+    //border: 1px solid black;
     margin-left: 3vw;
     margin-top: 1vh;
 }
@@ -421,14 +422,14 @@
     display: block;
     width: 9vw;
     height: 6vh;
-    /* border: 1px solid black; */
+   
     margin-left: 3.8vw;
     margin-top: 1vh;
 }
 #line5{
     width: 9vw;
     height: 6vh;
-    /* border: 1px solid black; */
+   // border: 1px solid black;
     margin-left: 3.5vw;
     margin-top: 1vh;
 }
@@ -436,7 +437,7 @@
 #line6{
     width: 9vw;
     height: 6vh;
-    /* border: 1px solid black; */
+    // border: 1px solid black;
     margin-left: 2vw;
     margin-top: 1vh;
 }
@@ -508,7 +509,7 @@
     left: 2vw;
     width: 16vw;
     height: 7vh;
-    /* border: 1px solid black; */
+   // border: 1px solid black;
     margin-top: 2vh;
     font-size: 4vh;
     text-align: center;
@@ -519,15 +520,64 @@
     position: relative;
     left: -7vw;
     top: 3vh;
+   } 
+   #option{
+    width: 17vw;
+    height: 40vh;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    border-radius: 2vh;
+   align-items: center;
+   position: relative;
+   top: -280vh;
+   left: 81vw;
+
+
+   }
+   .option{
+    width: 13vw;
+    height: 7vh;
+    margin: auto;
+    /* border: 1px  solid black; */
+    margin-top: 2vh;
+    font-size: 2.1vh;
+    font-weight: 600;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: wheat;
+    text-align: start;
+   }
+   #option1{
+     margin-top: -1.5vh; 
+     /* margin-left: 0vw; */
+    /* padding-left: 0; */
+    text-align: start;
+    
    }
   
+
+   #bicon{
+    /* display: block; */
+    width: 2vw;
+    height: 3vh;
+    position: relative;
+    left: -0.1vw;
+    top: 2.2vh;
+    /* background-color: yellow; */
+    margin-right: 0;
+    /* display: inline-block; */
+    /* border: 1px solid black; */
+    display: block;
+
+    
+   }
 
     </style>
 </head>
 <body>
     <div id="up">
     <div id="flipkard">Flipkard</div>
-    <input type="text" placeholder="             Search for products, brands and more" id="search" >
+    <input type="text" placeholder="          Search for products, brands and more" id="search" >
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="searchicon"    class="icon">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
 </svg>
@@ -670,6 +720,17 @@
 
        </div>
 
+       <div id="option">
+
+       <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16"  id="bicon">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+</svg> <div id="option1" class="option">Notification Perferences</div>
+        <div id="option2" class="option">24×7 Customer Care</div>
+        <div id="option3" class="option">Advertise</div>
+        <div id="option4" class="option">Download App</div>
+       
+
+       </div>
 
 
 
