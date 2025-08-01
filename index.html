@@ -14,7 +14,7 @@
            border-radius: 1.5vw;
           background-color: rgb(145, 226, 226);
         }
-        #flipkard{
+        #flipkart{
             
         font-size:4.5vh ;
         margin-top: 1vh;
@@ -531,6 +531,7 @@
    position: relative;
    top: -280vh;
    left: 81vw;
+   
 
 
    }
@@ -591,12 +592,69 @@
    left: -1.4vw;
 
    }
+   #modal{
+    width: 15vw;
+    height: 30vh;
+    border: 1px solid black;
+    opacity: 1;
+    border-radius: 2vh;
+     position: relative;
+    top: -240vh;
+    background-color: bisque;
+  left: 20vw;
+   opacity: 0;
+   /* pointer-events: allno; */
+   /* position: fixed; */
 
+   }
+#modal:target{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal{
+    width: 10vw;
+    height: 5vh;
+    margin: auto;
+    font-size: 3vh;
+    border: 1px solid black;
+    margin-top: 2vh;
+   
+   
+}
+
+#on{
+    width: 3vw;
+    height: 2vh;
+    font-size: 4vh;
+    text-decoration: none;
+    position: relative;
+    top: -241.5vh;
+    left: 27vw;
+    opacity: 0;
+    
+}
+
+
+#of{
+  
+    width: 3vw;
+    height: 4vh;
+      font-weight: 900;
+    /* border: 1px solid black; */
+    font-size: 4vh;
+    text-decoration: none;
+    position: relative;
+    top: -28vh;
+    left: 13.5vw;
+  
+    /* transform: scale(3) */
+    
+}
     </style>
 </head>
 <body>
     <div id="up">
-    <div id="flipkard">Flipkard</div>
+    <div id="flipkart">Flipkart</div>
     <input type="text" placeholder="          Search for products, brands and more" id="search" >
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="searchicon"    class="icon">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -756,6 +814,15 @@
 
        </div>
 
+
+       <a href="#modal"  id="on">Open</a>
+       <div id="modal">
+        <div class="modal" id="modal1">Men Cloth</div>
+        <div class="modal" id="modal2">Women Cloth</div>
+        <div class="modal" id="modal3">Child Cloth</div>
+        <div class="modal" id="modal4">Other Cloth</div>
+     
+       <a href="#" id="of">×</a>
 
 
        <script src="scripts.js"></script>
